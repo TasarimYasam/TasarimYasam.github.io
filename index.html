@@ -60,7 +60,7 @@
             color: #aaa;
         }
 
-        /* Ana Ekran Düzeni (Split Screen) */
+        /* Ana Ekran Düzeni */
         .app-container {
             display: flex;
             flex: 1;
@@ -71,17 +71,16 @@
         .video-area {
             flex: 2;
             background-color: #000;
-            position: relative;
             display: flex;
-            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .video-wrapper {
             position: relative;
+            width: 100%;
             padding-bottom: 56.25%; /* 16:9 Oranı */
             height: 0;
-            overflow: hidden;
-            flex: 1;
         }
 
         .video-wrapper iframe {
@@ -93,7 +92,7 @@
             border: none;
         }
 
-        /* Sağ Taraf: Sohbet ve Kanallar Paneli */
+        /* Sağ Taraf: Panel */
         .sidebar {
             flex: 1;
             max-width: 450px;
@@ -104,6 +103,174 @@
             border-left: 1px solid #2d2d2d;
         }
 
+        /* Sekme Menüsü */
+        .tabs {
+            display: flex;
+            background-color: #151515;
+            border-bottom: 1px solid #2d2d2d;
+        }
+
+        .tab-btn {
+            flex: 1;
+            padding: 15px;
+            background: none;
+            border: none;
+            color: #888;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .tab-btn.active {
+            color: var(--text-color);
+            border-bottom: 3px solid var(--accent-color);
+            background-color: var(--card-bg);
+        }
+
+        /* İçerik Alanları */
+        .tab-content {
+            flex: 1;
+            overflow-y: auto;
+            display: none;
+            padding: 15px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Sohbet Odası */
+        .chat-room {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chat-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: #1e1e1e;
+        }
+
+        /* Buton Grubu */
+        .btn-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            text-decoration: none;
+            color: white;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: transform 0.2s;
+        }
+        .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+        
+        .yt { background-color: #FF0000; }
+        .tt { background-color: #000000; border: 1px solid #222; }
+        .rumble { background-color: #87C232; }
+        .tg { background-color: #0088cc; }
+        .wa { background-color: #25D366; }
+        .ms { background-color: #6364FF; }
+        .ig { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+
+        /* Mobil Uyumluluk */
+        @media (max-width: 768px) {
+            .app-container {
+                flex-direction: column;
+            }
+            .sidebar {
+                max-width: 100%;
+                min-width: 100%;
+                flex: 1.5;
+            }
+            .video-area {
+                flex: none;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Üst Bar -->
+    <header class="app-header">
+        <div class="profile-section">
+            <img src="https://yt3.googleusercontent.com/x0mGWLt60-GJv2ZvwAcvOmkTft_zogGGIB01a3mqXIZGpvSxL_k_n1eb4kmZWBLIWa6I0atcA=s160-c-k-c0x00ffffff-no-rj" alt="Logo" class="profile-img">
+            <div class="profile-info">
+                <h3>Mutinous Technology</h3>
+                <p>Canlı Yayın & Topluluk Uygulaması</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ana Uygulama Alanı -->
+    <div class="app-container">
+        
+        <!-- Sol Panel: Video -->
+        <div class="video-area">
+            <div class="video-wrapper">
+                <!-- NOT: /embed/ sonrasına kendi güncel video kodunuzu veya canlı yayın kodunuzu yazmalısınız -->
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Mutinous Stream" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Sağ Panel: Sohbet ve Linkler -->
+        <div class="sidebar">
+            <!-- Sekme Seçimi -->
+            <div class="tabs">
+                <button class="tab-btn active" onclick="switchTab('chat')">💬 CANLI SOHBET</button>
+                <button class="tab-btn" onclick="switchTab('channels')">🔗 TÜM KANALLAR</button>
+            </div>
+
+            <!-- 1. Sekme: Sohbet Alanı -->
+            <div id="chat" class="tab-content active" style="padding: 0;">
+                <div class="chat-room">
+                    <!-- Telegram'ın resmi iframe korumasını aşan güvenli gömme linki kullanıldı -->
+                    <iframe class="chat-frame" src="https://tgwidget.com/channel/v2.0/MutinousTube?theme=dark"></iframe>
+                </div>
+            </div>
+
+            <!-- 2. Sekme: Kanallar/Sosyal Medya -->
+            <div id="channels" class="tab-content">
+                <div class="btn-grid">
+                    <a href="https://youtube.com/MutinousTube" target="_blank" class="btn yt">YouTube Kanalı</a>
+                    <a href="https://t.me/MutinousTube" target="_blank" class="btn tg">Telegram Grubu</a>
+                    <a href="https://whatsapp.com/channel/0029Vb4JKWmIyPtbv15mol0F" target="_blank" class="btn wa">WhatsApp Kanalı</a>
+                    <a href="https://www.tiktok.com/@mutinoustube" target="_blank" class="btn tt">TikTok</a>
+                    <a href="https://www.rumble.com/user/MutinousTube" target="_blank" class="btn rumble">Rumble</a>
+                    <a href="https://www.instagram.com/MutinousTube" target="_blank" class="btn ig">Instagram</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Sekme Değiştirme Scripti -->
+    <script>
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
         /* Sekme Menüsü (Sohbet vs Kanallar) */
         .tabs {
             display: flex;
