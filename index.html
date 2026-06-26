@@ -74,7 +74,7 @@
             overflow: hidden;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 Oranı için */
+            padding-bottom: 56.25%; /* 16:9 Oranı */
             height: 0;
         }
         .video-container iframe {
@@ -116,34 +116,55 @@
     <a href="https://www.facebook.com/TasarimYasam" class="btn fb">Facebook</a>
     <a href="https://youtube.com/@tasarimyasam/community?si=lX7STw3SHoXTHqV2" class="btn com">Topluluk</a>
 
-    <!-- YouTube Video Oynatıcı (Sesli ve Otomatik Oynatma Etiketli) -->
+    <!-- YouTube Resmi API Oynatıcı Yuvası -->
     <div class="video-container">
-        <iframe 
-            id="youtube-player"
-            src="https://www.youtube.com/embed/videoseries?list=PLybU7OTioIXmOjoyczXoOiPb23laSHZMe&autoplay=1" 
-            title="YouTube video player" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-        </iframe>
+        <div id="player"></div>
     </div>
 
-    <!-- Tarayıcı Engeli Aşan Ses Tetikleyici Script -->
+    <!-- YouTube IFrame Player API -->
     <script>
-        const playVideoOnInteraction = () => {
-            const iframe = document.getElementById('youtube-player');
-            if (iframe) {
-                // Mevcut src yapısını koruyarak yeniden yükler ve sesli oynatmayı tetikler
-                const currentSrc = iframe.src;
-                iframe.src = currentSrc; 
-            }
-            // Tetiklendikten sonra performansı düşürmemek için dinleyicileri kaldırır
-            document.removeEventListener('click', playVideoOnInteraction);
-            document.removeEventListener('touchstart', playVideoOnInteraction);
-        };
+        // API yükleniyor
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-        // Kullanıcı sayfaya dokunduğu veya tıkladığı an sesi açıp başlatır
-        document.addEventListener('click', playVideoOnInteraction);
-        document.addEventListener('touchstart', playVideoOnInteraction);
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '100%',
+                width: '100%',
+                playerVars: {
+                    'listType': 'playlist',
+                    'list': 'PLybU7OTioIXmOjoyczXoOiPb23laSHZMe',
+                    'autoplay': 1,
+                    'mute': 1, // Kesin otomatik oynatmayı sağlamak için sessiz başlar
+                    'playsinline': 1
+                },
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            event.target.playVideo();
+            
+            // Kullanıcı ekranda herhangi bir yere dokunduğu/tıkladığı an sesi açar
+            var enableSound = function() {
+                if (player && typeof player.unMute === 'function') {
+                    player.unMute();
+                    player.setVolume(80); // Ses seviyesini %80 yapar
+                    player.playVideo(); // Garanti oynatma tetikleyici
+                }
+                // Dinleyicileri temizle
+                document.removeEventListener('click', enableSound);
+                document.removeEventListener('touchstart', enableSound);
+            };
+
+            document.addEventListener('click', enableSound);
+            document.addEventListener('touchstart', enableSound);
+        }
     </script>
 
 </body>
