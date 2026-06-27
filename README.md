@@ -1,4 +1,4 @@
-# 🛠️ TasarimYasam'a Hoş Geldiniz!
+# 🛠️ TasarimYasam'a Hoş geldiniz!
 
 <div align="center">
   <!-- Profil Logosu -->
@@ -74,7 +74,7 @@
   *Videoları izlemek için aşağıdaki görsele tıklayabilirsiniz.*
 
   <a href="https://www.youtube.com/playlist?list=PLybU7OTioIXmOjoyczXoOiPb23laSHZMe">
-    <img src="https://img.youtube.com/vi/PLybU7OTioIXmOjoyczXoOiPb23laSHZMe/0.jpg" width="400" style="border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" alt="Oynatma Listesini İzle">
+    <img src="1782542305635.png" width="400" style="border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" alt="YouTube Oynatma Listesini İzle">
   </a>
 
 </div>
