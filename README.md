@@ -1,133 +1,80 @@
-![Logo](https://cdn.cottle.cloud/GitHub/LittleLink/littlelink.gif)
+# 🛠️ TasarimYasam'a Hoş Geldiniz!
 
-# LittleLink
-The DIY self-hosted LinkTree alternative. LittleLink has more than 100 branded button styles you can easily use, with more regularly added by our community in this repo and in [LittleLink Extended](https://github.com/sethcottle/littlelink-extended).
+<div align="center">
+  <!-- Profil Logosu -->
+  <a href="https://youtube.com/@TasarimYasam">
+    <img src="https://yt3.googleusercontent.com/ydUT4FcJQTB79eCMG-yBHpApCFwxFWAKfl9Sv9vHCjuMFgEEHAVi9GYtHK-uAg73tmaNByll=s160-c-k-c0x00ffffff-no-rj" width="113" style="border-radius: 50%; border: 4px solid #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" alt="TasarimYasam Logo">
+  </a>
 
----
-### 🆕 LittleLink Button Builder
-Want to make your own buttons for LittleLink but you're not too sure where to start? [Check out our new Button Builder](https://builder.littlelink.io). This new builder lets you preview button styles and with a single click, copy the generated CSS code to put in `css/brands.css`, and copy the generated HTML code to put in `index.html`. This builder also helps automate accessibility features by checking contrast ratios and suggesting strokes when needed, ensuring your custom buttons maintain LittleLink's high standards for visibility in both light and dark themes. Design your buttons visually, preview them live, and get ready to go code. [Live Site](https://builder.littlelink.io) | [GitHub Repo](https://github.com/sethcottle/littlelink-button-builder)
+  ## TasarimYasam
+  **Bağımsız Yayıncılığıma Hoşgeldiniz Tüm Güncel İçeriklerime Buradan Ulaşabilirsiniz.**
 
----
-### 🌞 Themes and Accessibility
-LittleLink offers `auto`, `light`, and `dark` themes right out of the box. If the default color schemes don't match your preference, you can easily customize them by updating the values in `style.css`. You can set any of the themes right in `index.html`. To enhance visual accessibility in both `light` and `dark` modes, buttons lacking sufficient contrast with the background are outlined with an inverse stroke to ensure visibility. While LittleLink emphasizes accessibility, it's important to acknowledge that not all brands incorporated into LittleLink achieve this standard. Branded buttons that come into LittleLink always retain the original essence of the brand and some branded buttons might fall short of optimal accessibility in terms of contrast.
+  ---
 
-![Theme](https://cdn.cottle.cloud/GitHub/LittleLink/ThemeSupport.gif)
+  <!-- Sosyal Medya Butonları -->
+  <a href="https://youtube.com/@TasarimYasam">
+    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" width="350">
+  </a>
+  <br><br>
+  <a href="https://www.youtube.com/channel/UCNQpjQqIsdUkKjsulWjngJA/join">
+    <img src="https://img.shields.io/badge/Özel_Katıl_Üyeliği-0066DC?style=for-the-badge&logo=youtube&logoColor=white" width="350">
+  </a>
+  <br><br>
+  <a href="https://www.youtube.com/playlist?list=UUMONQpjQqIsdUkKjsulWjngJA">
+    <img src="https://img.shields.io/badge/Katıl_Üyeliği_Videoları-E1306C?style=for-the-badge&logo=youtube&logoColor=white" width="350">
+  </a>
+  <br><br>
+  <a href="https://www.tiktok.com/@tasarimyasam">
+    <img src="https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white" width="350">
+  </a>
+  <br><br>
+  <a href="https://www.rumble.com/user/TasarimYasam">
+    <img src="https://img.shields.io/badge/Rumble-87C232?style=for-the-badge&logo=rumble&logoColor=white" width="350">
+  </a>
+  <br><br>
+  <a href="https://www.dailymotion.com/TasarimYasam">
+    <img src="https://img.shields.io/badge/Dailymotion-0066DC?style=for-the-badge&logo=dailymotion&logoColor=white" width="350">
+  </a>
+  <br><br>
+  <a href="https://t.me/TasarimYasam">
+    <img src="https://img.shields.io/badge/Telegram-0088cc?style=for-the-badge&logo=telegram&logoColor=white" width="350">
+  </a>
+  <br><br>
+  <a href="https://www.instagram.com/tasarim_yasam">
+    <img src="https://img.shields.io/badge/Instagram-E1306C?style=for-the-badge&logo=instagram&logoColor=white" width="350">
+  </a>
+  <br><br>
+  <a href="https://www.x.com/TasarimYasam">
+    <img src="https://img.shields.io/badge/Twitter_(X)-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" width="350">
+  </a>
+  <br><br>
+  <a href="https://whatsapp.com/channel/0029Vb9QYvwAu3aVlG74Zi24">
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" width="350">
+  </a>
+  <br><br>
+  <a href="https://www.patreon.com/@MutinousTube">
+    <img src="https://img.shields.io/badge/Patreon-FF424D?style=for-the-badge&logo=patreon&logoColor=white" width="350">
+  </a>
+  <br><br>
+  <a href="https://odysee.com/@TasarimYasam">
+    <img src="https://img.shields.io/badge/Odysee-0066DC?style=for-the-badge&logo=odysee&logoColor=white" width="350">
+  </a>
+  <br><br>
+  <a href="https://www.facebook.com/TasarimYasam">
+    <img src="https://img.shields.io/badge/Facebook-4267B2?style=for-the-badge&logo=facebook&logoColor=white" width="350">
+  </a>
+  <br><br>
+  <a href="https://youtube.com/@tasarimyasam/community?si=lX7STw3SHoXTHqV2">
+    <img src="https://img.shields.io/badge/Topluluk-555555?style=for-the-badge&logo=google-messages&logoColor=white" width="350">
+  </a>
 
----
-### 🥇 Performance
+  ---
 
-![Performance](https://cdn.cottle.cloud/GitHub/LittleLink/ranking.gif)
+  ### 📺 Güncel Oynatma Listesi
+  *Videoları izlemek için aşağıdaki görsele tıklayabilirsiniz.*
 
-LittleLink epitomizes simplicity and minimalism. When evaluating the [LittleLink sample page](https://littlelink.io/sample/seth) (which mirrors a typical LittleLink setup for an individual) through tools such as [Google PageSpeed Insights](https://pagespeed.web.dev/analysis/https-littlelink-io-sample-seth/17ex80ryq4?form_factor=mobile), showcases LittleLink's excellence with 100/100 in Performance, Accessibility, Best Practices, and SEO. My initial vision for LittleLink was to craft it from the fundamentals. LittleLink leverages it's own vanilla `css` to remove the unnecessary bloat you would get from using a large framework for a page that requires nothing more than simplicity.
+  <a href="https://www.youtube.com/playlist?list=PLybU7OTioIXmOjoyczXoOiPb23laSHZMe">
+    <img src="https://img.youtube.com/vi/PLybU7OTioIXmOjoyczXoOiPb23laSHZMe/0.jpg" width="400" style="border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" alt="Oynatma Listesini İzle">
+  </a>
 
----
-### ☁️ Deploy
-
-![Publish](https://cdn.cottle.cloud/GitHub/LittleLink/test/css/deploy.gif)
-
-No need for gulp, npm, or anything else to make LittleLink work—it uses the bare essentials. You can automatically fork and deploy LittleLink with [Cloudflare](https://workers.cloudflare.com/), [DigitalOcean](https://www.digitalocean.com/products/app-platform), [Vercel](https://vercel.com/), [Netlify](https://www.netlify.com/), or [Amplify](https://aws.amazon.com/amplify) using the buttons below. LittleLink is also easy to host through [GitHub Pages](https://pages.github.com/) or on your home lab server, CDN, or other frontend hosting services. To edit, all you need is a little basic HTML knowledge to add a link to the exisiting buttons or you can create your own. See our [adding custom buttons to your own fork wiki](https://github.com/sethcottle/littlelink/wiki/Adding-custom-buttons-to-your-own-fork). It's simple, promise. 🤞
-
----
-##### One-Click Deployments
-
-[![Deploy to Cloudflare](https://cdn.cottle.cloud/littlelink/button-deploy-cloudflare.svg)](https://deploy.workers.cloudflare.com/?url=https://github.com/sethcottle/littlelink)
-
-[![Deploy to DigitalOcean](https://cdn.cottle.cloud/littlelink/button-deploy-digitalocean.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/sethcottle/littlelink/tree/main)
-
-[![Deploy to Vercel](https://cdn.cottle.cloud/littlelink/button-deploy-vercel.svg)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsethcottle%2Flittlelink&project-name=littlelink&repository-name=littlelink)
-
-[![Deploy to Netlify](https://cdn.cottle.cloud/littlelink/button-deploy-netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sethcottle/littlelink)
-
-[![Deploy to Amplify](https://cdn.cottle.cloud/littlelink/button-deploy-amplify.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/sethcottle/littlelink)
-
----
-
-### 🤝 Contributions
-Please reference the [submitting a new brand to LittleLink wiki](https://github.com/sethcottle/littlelink/wiki/Submitting-a-new-brand-to-LittleLink) before opening a PR.
-
----
-### 📦 Community Extras
-
-#### 🛸 LittleLink Extended
-Looking for more niche services to add to your copy of LittleLink? Check out [LittleLink Extended](https://github.com/sethcottle/littlelink-extended). Users can add more niche services to this repository to help keep the core LittleLink repository less cluttered and more focused on delivering branded experiences for the majority of users.
-
-#### 🎨 Figma
-Duplicate the [LittleLink Template on Figma Community](https://www.figma.com/community/file/846568099968305613) to help plan out and design your LittleLink page.
-
-[![Figma Community](https://cdn.cottle.cloud/littlelink/button-figma-community.svg)](https://www.figma.com/community/file/846568099968305613)
-
-#### 🐋 Docker
-• [Techno Tim](https://github.com/timothystewart6) is building [LittleLink-Server](https://github.com/techno-tim/littlelink-server). Check out [his video](https://youtu.be/42SqfI_AjXU)!
-
-• [Drew](https://github.com/davisdre) is building a [super simple Docker implementation of LittleLink](https://github.com/davisdre/littlelink).
-
-#### 🗃️ Misc
-• [Julian](https://github.com/JulianPrieber) is building [LinkStack](https://github.com/LinkStackOrg/LinkStack), which is a fork of [Khashayar](https://github.com/khashayarzavosh)'s [LittleLink Admin](https://github.com/khashayarzavosh/admin-littlelink).
-
----
-
-### 💖 Supporters
-You can support LittleLink by [buying me a coffee](https://www.buymeacoffee.com/seth). You can also have your name or your company added to this section and the supporters page of the [LittleLink.io](https://littlelink.io) website.
-
-#### 🏢 Business Supporters
-• **[Unallocated Space](https://connect.unallocatedspace.org/)** | Hacker/Makerspace in Millersville, MD, serving the greater Baltimore-Washington area
-
-• **[links.dev](https://github.com/fatih-yavuz/links.dev)**
-
-[![Add Your Company Name](https://cdn.cottle.cloud/littlelink/button-buy-me-a-coffee-company.svg)](https://www.buymeacoffee.com/seth/e/50574)
-
-#### ✨ Individual Supporters
-• **[Drew Davis](https://connect.davisdre.me)**
-
-• **[Robotter112](https://robotter112.de/)**
-
-[![Buy Me A Coffee](https://cdn.cottle.cloud/littlelink/button-buy-me-a-coffee-individual.svg)](https://www.buymeacoffee.com/seth/e/50573)
-
-#### 🐙 Active GitHub Sponsors
-• **[Your Name Here](https://github.com/sponsors/sethcottle)**
-
-[![GitHub Sponsors](https://cdn.cottle.cloud/littlelink/button-github-sponsors.svg)](https://github.com/sponsors/sethcottle)
-
-
-#### 🥰 More Ways to Support LittleLink
-[![Buy Me A Coffee](https://cdn.cottle.cloud/littlelink/button-buy-me-a-coffee.svg)](https://www.buymeacoffee.com/seth/)
-
-[![Ko-Fi](https://cdn.cottle.cloud/littlelink/button-ko-fi.svg)](https://ko-fi.com/sethcottle)
-
-[![PayPal](https://cdn.cottle.cloud/littlelink/button-paypal.svg)](https://paypal.me/sethcottle/)
-
----
-
-### 🆕 Stay Connected
-
-Join the [Seth's Nook Discord](https://discord.gg/PrAEQFF2fK) server to get updates on LittleLink and more. Use the invite code `PrAEQFF2fK` or click the button below.
-
-[![Discord](https://cdn.cottle.cloud/littlelink/button-discord.svg)](https://discord.gg/PrAEQFF2fK)
-
----
-
-### 📊 Analytics
-
-To help build a more privacy focused product, we recommend using [Fathom Analytics](https://usefathom.com/ref/EQVZMV)*. [View our Fathom analytics dashboard](https://app.usefathom.com/share/xbmnwxxl/littlelink.io#/?filters=%5B%5D&range=last_7_days&site=2251799827005303)**.
-
-###### * This is a referral link. Using this link to sign up for Fathom is an easy way to help support LittleLink!
-
-###### ** Analytics in this dashboard start May 03, 2022. View this [Google Sheets file](https://docs.google.com/spreadsheets/d/1GL4SroAdH-OZphBVR5z-BoSukHIEVJfao25q_e9-Ii8/edit?usp=sharing) with the generic unique pageview data from Google Analytics.
-
-[![Fathom](https://cdn.cottle.cloud/littlelink/button-fathom-analytics.svg)](https://usefathom.com/ref/EQVZMV)
-
----
-### 🐳 Docker Support
-LittleLink includes Docker support for easy deployment and development. All Docker-related files are located in the `docker/` directory.
-
-To run LittleLink using Docker:
-
-```bash
-docker compose -f docker/compose.yaml up
-```
-
-This will make the site available at http://localhost:8080
-
-For more information about Docker configuration, see [docker/README.md](docker/README.md).
-
----
+</div>
